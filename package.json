@@ -15,7 +15,9 @@
   ],
   "author": "Joshua Marshall Moore",
   "license": "MIT",
-  "devDependencies": {
-    "expressjs": "^1.0.1"
-  }
+  "dependencies": {
+    "expressjs": "^1.0.1",
+    "fourdsocketproxy": "^3.1.0"
+  },
+  "repository": "https://github.com/thwee-alchemist/fourdd.git"
 }
