@@ -1,0 +1,21 @@
+{
+  "name": "fourdd",
+  "version": "0.1.0",
+  "description": "A fourdsocketproxy running in the server.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "graph",
+    "api",
+    "visualization",
+    "json",
+    "rest"
+  ],
+  "author": "Joshua Marshall Moore",
+  "license": "MIT",
+  "devDependencies": {
+    "expressjs": "^1.0.1"
+  }
+}
