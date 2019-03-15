@@ -16,8 +16,18 @@
   "author": "Joshua Marshall Moore",
   "license": "MIT",
   "dependencies": {
+    "angularjs": "0.0.1",
+    "bootstrap": "^4.3.1",
+    "circular-json": "^0.5.9",
     "expressjs": "^1.0.1",
-    "fourdsocketproxy": "^3.1.0"
+    "fourdsocketproxy": "^3.1.0",
+    "socket.io": "^2.2.0",
+    "socket.io-client": "^2.2.0",
+    "uuid": "^3.3.2"
   },
-  "repository": "https://github.com/thwee-alchemist/fourdd.git"
+  "repository": "https://github.com/thwee-alchemist/fourdd.git",
+  "devDependencies": {
+    "socket.io": "^2.2.0",
+    "uuid": "^3.3.2"
+  }
 }

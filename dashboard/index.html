@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="fourddApp">
+    <head> 
+        <title>Noone will see this title</title>
+        <script src="http://localhost:16203/dashboard/angular.min.js"></script>
+        <script src="http://localhost:16203/socket.io/socket.io.js"></script>
+        <script src="http://localhost:16203/dashboard/index.js"></script>
+    </head>
+    <body ng-controller="fourddCtrl">
+        <button onclick="document.querySelector('#iframe').contentWindow.location.reload(true);';">Reload</button>
+        <iframe name="fourd" style="width: 500px; height: 300px; border: 1px solid black;" src="http://localhost:16203/display/index.html"></iframe>
+        <br>
+        
+        <a href="http://localhost:16203/graph/all" target="json">/graph/all</a><br>
+        <a href="http://localhost:16203/graph/create" target="json">/graph/create</a><br>
+        
+        <label>Graphs: </label><br>
+        <a ng-repeat="graph in graphs" href="http://localhost:16203/graph/{{graph.id}}/" target="json">/graph/{{graph.id}}/</a><br>
+        <ol>
+            <li ng-repeat="graph in graphs">
+                <label>Vertices: </label><br>
+                <a href="http://localhost:16203/graph/{{graph.id}}/vertex/create" target="json">/graph/{{graph.id}}/vertex/create</a><br>
+                <ol>
+                    <li ng-repeat="vertex in graph.V">
+                        <a href="http://localhost:16203/graph/{{graph.id}}/vertex/{{vertex.id}}" target="json">/graph/{{graph.id}}/</a>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+        
+        <iframe name="json" style="width: 100%; height: 100%; border: 1px solid black;" target="_blank"></iframe>
+        
+    </body>
+</html>
